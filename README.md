@@ -19,10 +19,12 @@ pip install -r requirements.txt
 3. Train the model and evaluate. We provide the experiment scripts of all backbones under the folder ./scripts/. You can reproduce the results as the following examples:
 ```Bash
 cd iTransfomer
+
 # Use only MSE loss to train the model
-bash ./scripts/ETTh1.sh 1
-# Use PS loss to train the model
 bash ./scripts/ETTh1.sh 0
+
+# Use PS loss to train the model
+bash ./scripts/ETTh1.sh 1
 ```
 
 ## :sparkling_heart: Acknowledgements
