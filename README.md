@@ -15,7 +15,7 @@ PS loss establishes a novel benchmark for accurately modeling complex time serie
 ```Bash
 pip install -r requirements.txt
 ```
-2. The datasets can be obtained from [Google Drive](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?pli=1)
+2. The datasets can be obtained from [Google Drive](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?pli=1).
 3. Train the model and evaluate. We provide the experiment scripts of all backbones under the folder ```./scripts/``` . You can reproduce the results using the following commands. Results will be stored in ```./logs/PS/``` and ```./logs/MSE/```.
 ```Bash
 cd iTransformer
