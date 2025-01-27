@@ -11,11 +11,11 @@ PS loss establishes a novel benchmark for accurately modeling complex time serie
 
 ## :sparkles: Usage
 
-1. Install Pytorch and necessary dependencies. 
-2. The datasets can be obtained from Google Drive (https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?pli=1).
+1. Install Pytorch and necessary dependencies.
 ```Bash
 pip install -r requirements.txt
 ```
+2. The datasets can be obtained from Google Drive (https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?pli=1).
 3. Train the model and evaluate. We provide the experiment scripts of all backbones under the folder ./scripts/. You can reproduce the results as the following examples:
 ```Bash
 cd iTransfomer
