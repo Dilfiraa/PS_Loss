@@ -20,9 +20,9 @@ pip install -r requirements.txt
 ```Bash
 cd iTransfomer
 # Use only MSE loss to train the model
-sh ./scripts/ETTh1.sh 1
+bash ./scripts/ETTh1.sh 1
 # Use PS loss to train the model
-sh ./scripts/ETTh1.sh 0
+bash ./scripts/ETTh1.sh 0
 ```
 
 ## :sparkling_heart: Acknowledgements
