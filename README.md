@@ -15,10 +15,10 @@ PS loss establishes a novel benchmark for accurately modeling complex time serie
 ```Bash
 pip install -r requirements.txt
 ```
-2. The datasets can be obtained from Google Drive (https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?pli=1).
-3. Train the model and evaluate. We provide the experiment scripts of all backbones under the folder ./scripts/. You can reproduce the results as the following examples:
+2. The datasets can be obtained from <a href="[https://www.example.com/my great page](https://drive.google.com/file/d/1l51QsKvQPcqILT3DwfjCgx8Dsg2rpjot/view?pli=1)">Google Drive</a>
+3. Train the model and evaluate. We provide the experiment scripts of all backbones under the folder ```./scripts/``` . You can reproduce the results using the following commands. Results will be stored in ```./logs/PS/``` and ```./logs/MSE/```.
 ```Bash
-cd iTransfomer
+cd iTransformer
 
 # Use only MSE loss to train the model
 bash ./scripts/ETTh1.sh 0
