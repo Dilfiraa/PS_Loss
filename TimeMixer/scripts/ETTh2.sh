@@ -63,7 +63,7 @@ python -u run.py \
 
 python -u run.py \
   --task_name long_term_forecast \
-  --is_training 0 \
+  --is_training 1 \
   --root_path /home/tslab/dilfira/iTransformer/dataset/ETT-small/ \
   --data_path ETTh2.csv \
   --model_id ETTh2_$seq_len'_'192 \

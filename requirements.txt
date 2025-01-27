@@ -1,5 +1,5 @@
-python==3.8.13
-pytorch==2.0.1
+python==3.8.20
+pytorch==2.0.0
 scikit-learn==1.3.2
 numpy==1.22.3
 pandas==1.4.2
