@@ -2,8 +2,6 @@ export CUDA_VISIBLE_DEVICES=0
 
 model_name=TimeMixer
 
-# /media/sdb/TSLAB/dilfira/PS_Loss/TimeMixer/TimeMixer-main/scripts/long_term_forecast/ETT_script/TimeMixer_ETTh2_unify.sh
-
 seq_len=96
 e_layers=2
 down_sampling_layers=3
@@ -36,7 +34,7 @@ for ps_lambda in ${ps_lambdas[@]}; do
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path  /home/tslab/dilfira/iTransformer/dataset/ETT-small/\
+  --root_path ../datasets/ETT-small/ \
   --data_path ETTh2.csv \
   --model_id ETTh2_$seq_len'_'96 \
   --model $model_name \
@@ -64,7 +62,7 @@ python -u run.py \
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path /home/tslab/dilfira/iTransformer/dataset/ETT-small/ \
+  --root_path ../datasets/ETT-small/ \
   --data_path ETTh2.csv \
   --model_id ETTh2_$seq_len'_'192 \
   --model $model_name \
@@ -93,7 +91,7 @@ python -u run.py \
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path /home/tslab/dilfira/iTransformer/dataset/ETT-small/ \
+  --root_path ../datasets/ETT-small/ \
   --data_path ETTh2.csv \
   --model_id ETTh2_$seq_len'_'336 \
   --model $model_name \
@@ -122,7 +120,7 @@ python -u run.py \
 python -u run.py \
   --task_name long_term_forecast \
   --is_training 1 \
-  --root_path /home/tslab/dilfira/iTransformer/dataset/ETT-small/ \
+  --root_path ../datasets/ETT-small/ \
   --data_path ETTh2.csv \
   --model_id ETTh2_$seq_len'_'720 \
   --model $model_name \
