@@ -2,7 +2,7 @@ export CUDA_VISIBLE_DEVICES=7
 
 model_name=iTransformer
 
-use_ps_loss=$1  # Use MSE loss only 1: Use PS loss
+use_ps_loss=$1  # 0: Use MSE loss only, 1: Use PS loss
 patch_len_threshold=24
 
 
