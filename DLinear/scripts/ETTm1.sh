@@ -1,9 +1,6 @@
-export CUDA_VISIBLE_DEVICES=3
-
+export CUDA_VISIBLE_DEVICES=0
 
 seq_len=336
-model_name=DLinear
-
 model_name=DLinear
 
 use_ps_loss=$1  # Use MSE loss only 1: Use PS loss
