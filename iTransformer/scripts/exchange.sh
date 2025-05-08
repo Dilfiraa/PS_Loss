@@ -4,7 +4,7 @@ model_name=iTransformer
 
 use_ps_loss=$1  # Use MSE loss only 1: Use PS loss
 patch_len_threshold=24
-# /media/sdb/TSLAB/dilfira/PS_Loss/iTransformer/scripts/exchange.sh
+
 
 if [ ! -d "./logs/MSE/" ];then
     mkdir -p ./logs/MSE/
