@@ -10,7 +10,7 @@ PS loss establishes a novel benchmark for accurately modeling complex time serie
 
 
 ## :sparkles: Usage
-
+The PS loss is implemented in the ```./[model_name]/exp/exp_main.py``` and ```./[model_name]/exp/exp_long_term_forecasting.py``` files.
 1. Install Pytorch and necessary dependencies.
 ```Bash
 pip install -r requirements.txt
