@@ -23,7 +23,7 @@ fi
 for ps_lambda in ${ps_lambdas[@]}; do
 python -u run.py \
   --task_name long_term_forecast \
-  --is_training 0 \
+  --is_training 1 \
   --root_path ../datasets/ETT-small/ \
   --data_path ETTm1.csv \
   --model_id ETTm1_96_96 \
