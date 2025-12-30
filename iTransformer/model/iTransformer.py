@@ -57,19 +57,11 @@ class Model(nn.Module):
         enc_out = self.enc_embedding(x_enc, x_mark_enc) # covariates (e.g timestamp) can be also embedded as tokens
         
         # B N E -> B N E                (B L E -> B L E in the vanilla Transformer)
-        # the dimensions of embedded time series has been inve/media/sdb/TSLAB/dilfira/Loss_func_exp/iTransformer/scriptsrted, and then processed by native attn, layernorm and ffn modules
         enc_out, attns = self.encoder(enc_out, attn_mask=None)
 
         # B N E -> B N S -> B S N 
         dec_out = self.projector(enc_out).permute(0, 2, 1)[:, :, :N] # filter the covariates
         
-        # window_size = 11
-        # sigma = 1.5
-        # gauss = torch.Tensor(torch.exp(torch.Tensor([-(x - window_size//2)**2/float(2*sigma**2) for x in range(window_size)])))
-        # _1D_window = gauss / gauss.sum()
-        # _1D_window = _1D_window.to(dec_out.device)
-        # window = _1D_window.unsqueeze(0).expand(N, 1, window_size).contiguous()
-        # dec_out = F.conv1d(dec_out.permute(0, 2, 1), window, groups=N, stride=2).permute(0, 2, 1)
 
         if self.use_norm:
             # De-Normalization from Non-stationary Transformer
